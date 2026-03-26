@@ -551,14 +551,14 @@ Trả lời bằng Markdown rõ ràng, thân thiện, kết thúc bằng lời m
 ${knowledgeBase}`;
 
   try {
-    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
-      },
-      body: JSON.stringify({
-        model: "z-ai/glm-4.5-air:free",
+    const res = await fetch("https://9router.vuhai.io.vn/v1/chat/completions", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer sk-4bd27113b7dc78d1-lh6jld-f4f9c69f"
+  },
+  body: JSON.stringify({
+    model: "ces-chatbot-gpt-5.4",
         messages: [{ role: "system", content: systemPrompt }, ...messages]
       })
     });
